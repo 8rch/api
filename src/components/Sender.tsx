@@ -28,28 +28,28 @@ const Sender: React.FC<SenderProps> = ({ didSendMoney }) => {
   };
 
   return (
-    <form className="send-container">
-      <div className="send-inputs">
-        <div className="send-top-left">
-          <label htmlFor="amount">Amount (lamports)</label>
-        </div>
-        <div className="send-mid-left">
-          <label htmlFor="address">Address</label>
-        </div>
-        <div className="send-top-right">
-          <input type="text" value={amount} onChange={onChangeAmount} />
-        </div>
-        <div className="send-mid-right">
-          <input type="text" value={address} onChange={onChangeAddress} />
-        </div>
-        <div className="send-bottom-right">
-          <button className="send-buttons" onClick={onClickSendMoney}>
-            Submit
-          </button>
-        </div>
-      </div>
-    </form>
-  );
+		<form className='send-container'>
+			<div className='send-inputs'>
+				<div className='send-top-left'>
+					<label htmlFor='amount'>Amount (microtransactions)</label>
+				</div>
+				<div className='send-mid-left'>
+					<label htmlFor='address'>Address destination</label>
+				</div>
+				<div className='send-top-right'>
+					<input type='text' value={amount} onChange={onChangeAmount} />
+				</div>
+				<div className='send-mid-right'>
+					<input type='text' value={address} onChange={onChangeAddress} />
+				</div>
+				<div className='send-bottom-right'>
+					<button className='send-buttons' onClick={onClickSendMoney}>
+						Submit
+					</button>
+				</div>
+			</div>
+		</form>
+	);
 };
 
 export default Sender;
