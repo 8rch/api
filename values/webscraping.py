@@ -1,6 +1,8 @@
 from bs4 import BeautifulSoup
 import requests
 #import pandas as pd
+import json
+
 
 url = 'https://coinmarketcap.com/es/currencies/solana/'
 page = requests.get(url)
@@ -13,3 +15,7 @@ for i in  eq:
     equipos.append(i.text)
 
 print(equipos,len(equipos))
+
+jsonString = json.dumps(equipos)
+
+print(jsonString,len(jsonString))
