@@ -14,8 +14,11 @@ equipos= list()
 for i in  eq:
     equipos.append(i.text)
 
-print(equipos,len(equipos))
+##print(equipos,len(equipos))
 
 jsonString = json.dumps(equipos)
 
-print(jsonString,len(jsonString))
+print(jsonString)
+with open('results.json', 'w') as f:
+    json.dump(equipos, f, indent=2)
+    print("The json file is created")

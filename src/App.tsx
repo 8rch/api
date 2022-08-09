@@ -36,6 +36,7 @@ function App() {
   return (
 		<div className='app-body'>
 			<div className='app-body-top'>
+				<h1> Ethernum native token reproduced</h1>
 				<h3>Send Money on Solana Blockchain</h3>
 				<Sender didSendMoney={didSendMoney} />
 			</div>
