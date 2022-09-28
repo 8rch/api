@@ -8,9 +8,9 @@ import {
   TransactionInstruction,
 } from "@solana/web3.js";
 import EventEmitter from "eventemitter3";
-
+// creando el type con javascript puro
 export interface WalletAdapter extends EventEmitter {
-  publicKey: PublicKey | null;
+  publicKey: PublicKey | null; //multiple functionalities
   signTransaction: (transaction: Transaction) => Promise<Transaction>;
   connect: () => any;
   disconnect: () => any;

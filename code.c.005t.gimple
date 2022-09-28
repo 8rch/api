@@ -1,0 +1,31 @@
+main (int argc, char * * argv)
+{
+  int D.1922;
+
+  {
+    int i;
+    extern int printf (const char *, ...);
+    extern int helper_function ();
+
+    printf ("argc: %i\n", argc);
+    i = 0;
+    goto <D.1916>;
+    <D.1915>:
+    _1 = (long unsigned int) i;
+    _2 = _1 * 8;
+    _3 = argv + _2;
+    _4 = *_3;
+    printf ("argv[%i]: %s\n", _4);
+    i = i + 1;
+    <D.1916>:
+    if (i < argc) goto <D.1915>; else goto <D.1917>;
+    <D.1917>:
+    helper_function ();
+    D.1922 = 0;
+    return D.1922;
+  }
+  D.1922 = 0;
+  return D.1922;
+}
+
+
