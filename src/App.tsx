@@ -4,11 +4,11 @@ import "./App.css";
 import Sender from "./components/Sender";
 import TransactionsView from "./components/TransactionView";
 import {
-  getTransactions,
-  TransactionWithSignature,
+	getTransactions,
+	TransactionWithSignature,
 } from "./helpers/transactions";
 import { initWallet, WalletAdapter } from "./helpers/wallet";
-//simple ui build 
+//simple ui build
 function App() {
 	const [transactions, setTransactions] =
 		useState<Array<TransactionWithSignature>>();

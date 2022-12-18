@@ -16,10 +16,11 @@ export interface WalletAdapter extends EventEmitter {
   disconnect: () => any;
 }
 
-const cluster = "http://devnet.solana.com";
-// const cluster = "http://tesnet.solana.com";
+// const cluster = "http://devnet.solana.com";
+const cluster = "http://tesnet.solana.com";
 const connection = new Connection(cluster, "confirmed");
-const wallet: WalletAdapter = new Wallet("https://www.sollet.io", cluster);
+// const wallet: WalletAdapter = new Wallet("https://solflare.com/portfolio",cluster);
+const wallet: WalletAdapter = new Wallet("https://phantom.app", cluster);
 
 export async function initWallet(): Promise<[Connection, WalletAdapter]> {
   await wallet.connect();
